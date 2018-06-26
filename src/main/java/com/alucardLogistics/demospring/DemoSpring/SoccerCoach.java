@@ -28,4 +28,9 @@ public class SoccerCoach implements Coach {
 		return "Soccer: " + fortuneService.getFortune();
 	}
 
+	@Override
+	public String getRandomFortune() {
+		return fortuneService.getRandomFortune();
+	}
+
 }

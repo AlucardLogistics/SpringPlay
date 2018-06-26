@@ -11,5 +11,7 @@ public interface Coach {
 	public String getWeeklyWorkOut();
 	
 	public String getDailyFortune();
+	
+	public String getRandomFortune();
 
 }

@@ -28,4 +28,10 @@ private FortuneService fortuneService;
 		return "Tracking: " + fortuneService.getFortune();
 	}
 
+
+	@Override
+	public String getRandomFortune() {
+		return fortuneService.getRandomFortune();
+	}
+
 }
