@@ -6,14 +6,21 @@ private FortuneService fortuneService;
 	
 	public TrackCoach(FortuneService theFortuneService) {
 		fortuneService = theFortuneService;
-	}
-	
+	}	
 		
 	public TrackCoach() {
 		super();
 	}
-
-
+	
+	//add an init method
+	public void doMyStartupStuff() {
+		System.out.println("TrackCoach init: doMyStartupStuff");
+	}
+	
+	//add a destroy method
+	public void deMyCleanupStuff() {
+		System.out.println("TrackCoach destroy: deMyCleanupStuff");
+	}
 
 	public String getDailyWorkOut() {
 		return "Daily: Run a hard 5k.";

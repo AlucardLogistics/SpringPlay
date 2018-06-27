@@ -8,7 +8,7 @@ public class HappyFortuneService implements FortuneService {
 			"Random Fortune: New contract is coming your way!", 
 			"Random Fortune: Try again tomorrow!"};	
 	Random rand = new Random();
-	int randFortune = rand.nextInt(3);
+	int randFortune = rand.nextInt(fortunes.length);
 	
 
 	@Override
